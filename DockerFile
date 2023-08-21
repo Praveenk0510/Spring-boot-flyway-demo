@@ -1,0 +1,4 @@
+FROM openjdk:11
+LABEL maintainer="praveen.github"
+ADD target/FlyWayExample-0.0.1-SNAPSHOT.jar spring-flyway-demo.jar
+ENTRYPOINT ["java","-jar","spring-flyway-demo.jar"]
